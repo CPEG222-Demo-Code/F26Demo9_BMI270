@@ -55,7 +55,7 @@ int main(void) {
     while (1) {
         // Read accelerometer and gyroscope data from BMI270
         BMI270_Read_All_Data();// Read BMI270 sensor data
-        //BMI270_ReadAccelGyro(&accel_x, &accel_y, &accel_z, &gyro_x, &gyro_y, &gyro_z);
+
         snprintf(buffer, sizeof(buffer), "  X:% 4.3f, % 4.3f",accel_x, gyro_x);
         OLED_Print(4, 0, buffer);
         snprintf(buffer, sizeof(buffer), "  Y:% 4.3f, % 4.3f", accel_y, gyro_y);
