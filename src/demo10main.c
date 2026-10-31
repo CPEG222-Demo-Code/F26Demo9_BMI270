@@ -1,6 +1,6 @@
 // ****************************************************************
 // * Authors: T. LUM and R. MARTIN
-// * CPEG222 Demo9 Program, 10/28/2026
+// * CPEG222 Demo10 Program, 10/28/2026
 // * NucleoF446ZE CMSIS STM32F4xx example Program
 // * Reads the BMI270 IMU and displays the accelerometer and gyroscope 
 // * data on the SSH1106 OLED display.
@@ -38,7 +38,7 @@ int main(void) {
     SystemClock_Config(); // Call the function to set system clock to 180MHz
     UART3_Init();
     NeoPixel_Init_PB11(); // Initialize NeoPixel on PB11
-    uart3_send_string("\nCPEG222 BMI270 IMU Demo9 Program - 10/28/2026\n");
+    uart3_send_string("\nCPEG222 BMI270 IMU Demo10 Program - 10/28/2026\n");
     I2C1_Init(); // Initialize I2C for the BME280 before using the Bosch driver 
     OLED_Init(); // Initialize the OLED display
     OLED_Print(0, 0, "CPEG222 - 10/28/2026");
